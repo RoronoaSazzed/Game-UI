@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>How to Play Page</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        position: relative;
+        padding: 25px;
+      }
+
+      .wrapper {
+        width: 100%;
+        max-width: 1080px;
+        padding: 20px;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+        position: relative;
+      }
+
+      .iconTitle {
+        font-weight: 300;
+        font-size: 1.5em;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        line-height: 42px;
+        text-align: center;
+      }
+
+      .list-items {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 20px 0px;
+      }
+
+      .icon {
+        width: 5%;
+        padding: 10px;
+        display: grid;
+        place-items: center;
+      }
+
+      .list-text {
+        width: 95%;
+        padding: 10px;
+      }
+
+      .cross {
+        width: 40px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+      }
+
+      .cross:hover {
+        cursor: pointer;
+      }
+
+      .notice {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 20px 0px;
+      }
+
+      @media (min-width: 320px) and (max-width: 480px) {
+        .wrapper {
+          padding: 15px;
+        }
+
+        .cross {
+          width: 28px;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <h3 class="iconTitle">how to play</h3>
+        <div class="list-items">
+          <div class="icon">1.</div>
+          <div class="list-text">
+            <p>
+              Guess the NOODLE using the four basic arithmetic operations
+              applied to four randomly chosen numbers!
+            </p>
+          </div>
+        </div>
+        <div class="list-items">
+          <div class="icon">2.</div>
+          <div class="list-text">
+            <p>
+              You may use each of the four numbers originally selected once, and
+              the result of each operation performed with them once.
+            </p>
+          </div>
+        </div>
+        <div class="list-items">
+          <div class="icon">3.</div>
+          <div class="list-text">
+            <p>
+              For example, if you multiply 5 by 2 to obtain 10, you may no
+              longer use the 2 or 5, but may use the 10 in further calculations.
+            </p>
+          </div>
+        </div>
+        <div class="list-items">
+          <div class="icon">4.</div>
+          <div class="list-text">
+            <p>
+              It's not mandatory to use all the numbers. All numbers used must
+              be integers.
+            </p>
+          </div>
+        </div>
+        <img class="cross" src="Cross.svg" alt="" />
+      </div>
+
+      <h4 class="notice">
+        Five new NOODLES will be available each day. You got this!
+      </h4>
+    </div>
+  </body>
+</html>
