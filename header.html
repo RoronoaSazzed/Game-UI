@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Header</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .header {
+        min-height: 45px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+      }
+
+      .flexItem {
+        flex: 1;
+        position: relative;
+      }
+
+      #home {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      #logo {
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 18px;
+        pointer-events: none;
+      }
+
+      #nav-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+
+      .nav-options {
+        width: 50px;
+        border: 1px solid #c444fc;
+        display: grid;
+        place-items: center;
+        margin: 5px;
+        border-radius: 50%;
+        transition: 0.25s;
+      }
+
+      .nav-options:hover {
+        border: 1px solid transparent;
+      }
+
+      .icon-responsive {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="flexItem" id="home">
+        <a class="nav-options" href="#"
+          ><img class="icon-responsive" src="home.svg" alt=""
+        /></a>
+      </div>
+
+      <div class="flexItem" id="logo">noodle</div>
+
+      <div class="flexItem" id="nav-menu">
+        <a class="nav-options" href="#"
+          ><img class="icon-responsive" src="how-to-play.svg" alt=""
+        /></a>
+        <a class="nav-options" href="#"
+          ><img class="icon-responsive" src="stat.svg" alt=""
+        /></a>
+        <a class="nav-options" href="#"
+          ><img class="icon-responsive" src="settings.svg" alt=""
+        /></a>
+      </div>
+    </div>
+  </body>
+</html>
