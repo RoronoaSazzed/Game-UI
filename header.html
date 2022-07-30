@@ -10,16 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Header</title>
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-
       .header {
         min-height: 45px;
         padding: 10px;
@@ -77,23 +71,26 @@
   </head>
   <body>
     <div class="header">
-      <div class="flexItem" id="home">
+      <div class="flexItem hide-on-mobile" id="home">
         <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="home.svg" alt=""
+          ><img class="icon-responsive" src="icons/home.svg" alt=""
         /></a>
       </div>
 
       <div class="flexItem" id="logo">noodle</div>
 
       <div class="flexItem" id="nav-menu">
-        <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="how-to-play.svg" alt=""
+        <a class="nav-options hide-on-pc" href="#"
+          ><img class="icon-responsive" src="icons/home.svg" alt=""
         /></a>
         <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="stat.svg" alt=""
+          ><img class="icon-responsive" src="icons/how-to-play.svg" alt=""
         /></a>
         <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="settings.svg" alt=""
+          ><img class="icon-responsive" src="icons/stat.svg" alt=""
+        /></a>
+        <a class="nav-options" href="#"
+          ><img class="icon-responsive" src="icons/settings.svg" alt=""
         /></a>
       </div>
     </div>

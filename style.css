@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* This class allows a div to have a styling that will be a modal box styling.
+
+Currently used on "How to Play" "Statistics" &
+"Settings Page" */
+
+.modal {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 25px;
+}
+
+/* This class allows a div to have Horizontal direction flex box.
+
+Currently used on Pop Up onload & Game UI Page*/
+
+.flex-hor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* This class allows a div to have a styling that will be injected
+into the wrapper inside modal box styling.
+
+Currently used on "How to Play" "Statistics" & "Settings Page" */
+
+.modal-wrapper {
+  width: 100%;
+  max-width: 1080px;
+  padding: 20px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+  position: relative;
+}
+
+/* This Class is used for any type of notice throughout the Entire site.
+
+Currently used on Game UI page & How to Play Page */
+
+.notice {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  margin: 20px 0px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/* This class used for Image Responsiveness for all device.
+
+Currently used on Pop up, Game UI page & Header. */
+
+.img-responsive {
+  width: 100%;
+}
+
+/* Media Query For Mobile */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* Media Query: Header Styling */
+
+  /* This class allows to hide a specific element on mobile device.
+  
+  Currently used on Header */
+  .hide-on-mobile {
+    display: none !important;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  #logo {
+    order: -1;
+    margin-bottom: 15px;
+  }
+
+  /* Media Query: Pop Up Styling */
+
+  .flex-hor {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 80%;
+    margin: 30px 0px;
+  }
+
+  .icon {
+    width: 75px;
+  }
+
+  /* Media Query: Game Page UI */
+
+  .items-hor {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Media Query: "How to Play" "Statistics" & "Settings" Page */
+
+  .modal-wrapper {
+    padding: 15px;
+  }
+
+  .cross {
+    width: 28px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media (min-width: 481px) {
+  /* This class allows to hide a specific element on PC device.
+  
+  Currently used on Header */
+
+  .hide-on-pc {
+    display: none !important;
+  }
+}

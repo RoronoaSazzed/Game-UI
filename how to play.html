@@ -10,32 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>How to Play Page</title>
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-
-      .parentDiv {
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        position: relative;
-        padding: 25px;
-      }
-
-      .wrapper {
-        width: 100%;
-        max-width: 1080px;
-        padding: 20px;
-        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
-        position: relative;
-      }
-
       .iconTitle {
         font-weight: 300;
         font-size: 1.5em;
@@ -74,30 +52,11 @@
       .cross:hover {
         cursor: pointer;
       }
-
-      .notice {
-        font-size: 20px;
-        font-weight: 400;
-        margin: 20px 0px;
-      }
-
-      @media (min-width: 320px) and (max-width: 480px) {
-        .wrapper {
-          padding: 15px;
-        }
-
-        .cross {
-          width: 28px;
-          position: absolute;
-          top: 15px;
-          right: 15px;
-        }
-      }
     </style>
   </head>
   <body>
-    <div class="parentDiv">
-      <div class="wrapper">
+    <div class="modal">
+      <div class="modal-wrapper">
         <h3 class="iconTitle">how to play</h3>
         <div class="list-items">
           <div class="icon">1.</div>
@@ -135,7 +94,7 @@
             </p>
           </div>
         </div>
-        <img class="cross" src="Cross.svg" alt="" />
+        <img class="cross" src="icons/Cross.svg" alt="" />
       </div>
 
       <h4 class="notice">

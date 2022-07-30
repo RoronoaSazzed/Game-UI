@@ -14,13 +14,6 @@
     <title>Game Page Template</title>
 
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", sans-serif;
-      }
-
       button {
         border: none;
       }
@@ -54,15 +47,6 @@
         margin-bottom: 20px;
       }
 
-      /* This class allows a div to have Horizontal direction flex box */
-
-      .flex-hor {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-      }
-
       /* Items of horizontal direction CSS */
 
       .items-hor {
@@ -94,19 +78,7 @@
         background-color: coral !important;
       }
 
-      /* Any type of notice throughout the Entire site */
-
-      .notice {
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 400;
-        margin: 20px 0px;
-        text-transform: capitalize;
-      }
-
-      .img-responsive {
-        width: 100%;
-      }
+      /* The dynamic Digit that is generated then placed into the game page. This ID holds that container styling. */
 
       #given-digit {
         text-align: center;
@@ -116,12 +88,15 @@
         border-radius: 10px;
       }
 
-      /* Output Section */
+      /* Output Section. The options we tap from bottom & wanna see output of.
+      This class allows of that output section as a whole.
+      This class will have "auto height increase" based on how many lines you wanna add. Currently CSS done in that way.
+      
+      N.B. I noticed max of 3 lines so I used that as in my sample design.*/
 
       .output {
         display: flex;
         align-items: flex-start;
-        /* justify-content: center; */
         flex-direction: column;
       }
 
@@ -167,13 +142,6 @@
         background-color: #f2f4f8;
         border-radius: 10px;
       }
-
-      @media (min-width: 320px) and (max-width: 480px) {
-        .items-hor {
-          width: 50px;
-          height: 50px;
-        }
-      }
     </style>
   </head>
   <body>
@@ -191,44 +159,43 @@
       <!-- Output Section -->
 
       <div class="output items-ver">
-        <!-- One Row per Time -->
         <div class="flex-hor items-ver">
           <div class="items-hor digit-input">
             <p>4</p>
           </div>
           <div class="items-hor operator-sign">-</div>
           <div class="items-hor digit-input">
-            <p>1</p>
+            <p>5</p>
           </div>
-          <div class="items-hor attempt">3</div>
+          <div class="items-hor attempt">2</div>
         </div>
 
-        <!-- One Row per Time -->
         <div class="flex-hor items-ver">
           <div class="items-hor digit-input">
             <p>4</p>
           </div>
           <div class="items-hor operator-sign">-</div>
           <div class="items-hor digit-input">
-            <p>1</p>
+            <p>5</p>
           </div>
-          <div class="items-hor attempt">3</div>
+          <div class="items-hor attempt">2</div>
         </div>
 
-        <!-- One Row per Time -->
         <div class="flex-hor items-ver">
           <div class="items-hor digit-input">
             <p>4</p>
           </div>
           <div class="items-hor operator-sign">-</div>
           <div class="items-hor digit-input">
-            <p>1</p>
+            <p>5</p>
           </div>
-          <div class="items-hor success">3</div>
+          <div class="items-hor success">2</div>
         </div>
       </div>
 
       <!-- Touch Section -->
+
+      <!-- Digit Section -->
 
       <div class="touch-section items-ver">
         <div class="flex-hor" id="provided-number">
@@ -246,6 +213,8 @@
           </button>
         </div>
 
+        <!-- Operator Section -->
+
         <div class="flex-hor" id="operator-section">
           <button class="items-hor operator-sign">+</button>
           <button class="items-hor operator-sign">-</button>
@@ -253,18 +222,20 @@
           <button class="items-hor operator-sign">÷</button>
         </div>
 
+        <!-- Toolbar Section -->
+
         <div class="flex-hor" id="toolbar">
           <button class="items-hor">
-            <img class="img-responsive" src="Backspace Icon.svg" alt="" />
+            <img class="img-responsive" src="icons/Backspace Icon.svg" alt="" />
           </button>
           <button class="items-hor">
-            <img class="img-responsive" src="Trash Icon.svg" alt="" />
+            <img class="img-responsive" src="icons/Trash Icon.svg" alt="" />
           </button>
           <button class="items-hor">
-            <img class="img-responsive" src="Complete Icon.svg" alt="" />
+            <img class="img-responsive" src="icons/Complete Icon.svg" alt="" />
           </button>
           <button class="items-hor">
-            <img class="img-responsive" src="Share Icon.svg" alt="" />
+            <img class="img-responsive" src="icons/Share Icon.svg" alt="" />
           </button>
         </div>
       </div>
