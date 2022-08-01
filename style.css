@@ -5,6 +5,280 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Header CSS Stylings */
+
+.header {
+  min-height: 45px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+}
+
+.flexItem {
+  flex: 1;
+  position: relative;
+}
+
+#home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-options {
+  width: 50px;
+  border: 1px solid #c444fc;
+  display: grid;
+  place-items: center;
+  margin: 5px;
+  border-radius: 50%;
+  transition: 0.25s;
+}
+
+.nav-options:hover {
+  border: 1px solid transparent;
+}
+
+.icon-responsive {
+  width: 100%;
+}
+
+/* Header CSS Stylings Ends */
+
+/* Pop Up CSS */
+
+/* Pop Up Icon Box CSS Stylings for desktop & Tab */
+
+.box {
+  display: grid;
+  place-items: center;
+  width: 35%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  text-align: center;
+  padding: 25px;
+  border-radius: 25px;
+  box-shadow: 0 5px 25px -10px rgba(0, 0, 0, 0.21);
+  transition: 0.25s;
+}
+
+.box:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 25px -10px rgba(196, 68, 252, 0.55);
+}
+
+/* Pop Up Button Icon */
+
+.icon {
+  max-width: 100px;
+}
+
+/* Pop Up Button Title. */
+
+/* This class is also used for any type of title throughout the entire site.
+
+Currently used on "Pop Up Icon Box" "Statistics" "Settings" & "How to play" Page */
+
+.page-title {
+  font-weight: 300;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  line-height: 42px;
+  text-align: center;
+}
+
+/* Pop Up CSS Styling Ends */
+
+/* How to Play Page CSS Styling */
+
+/* This class is declared to parent element so that you can
+use list items without ul, li styling.
+      
+Currently used on "How to Play" Page */
+
+.list-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+/* Used for List Items Icon or Number Section.
+      
+Currently used on "How to Play" Page */
+
+.list-icon {
+  width: 5%;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+
+/* Used for List Items Text Section.
+      
+Currently used on "How to Play" Page */
+
+.list-text {
+  width: 95%;
+  padding: 10px;
+}
+
+/* How to Play CSS Styling Ends */
+
+/* Game Page Template CSS Styling */
+
+/* It's a class that disables browser default button styling.
+      
+Currently used on "Game Page Template" Page. */
+
+.default-style-disabled {
+  border: none;
+}
+
+.default-style-disabled:hover {
+  cursor: pointer;
+}
+
+.game-box-wrapper {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* This class allows a div to have vertical direction flex box */
+
+.flex-ver {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Items of vertical direction CSS */
+
+.items-ver {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Items of horizontal direction CSS */
+
+.items-hor {
+  margin: 15px 0;
+  display: grid;
+  place-items: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.16);
+  font-size: 1.8rem;
+  color: #333333;
+  font-weight: 200;
+}
+
+/* Success Color of the result */
+
+.success {
+  color: white !important;
+  background-color: lightgreen !important;
+}
+
+/* Attempt Color of the result */
+
+.attempt {
+  color: white !important;
+  background-color: coral !important;
+}
+
+/* The dynamic Digit that is generated then placed into the game page. This ID holds that container styling. */
+
+#given-digit {
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  background-color: #0a84ff;
+  border-radius: 10px;
+}
+
+/* Output Section. The options we tap from bottom & wanna see output of.
+This class allows of that output section as a whole.
+This class will have "auto height increase" based on how many lines you wanna add. Currently CSS done in that way.
+      
+N.B. I noticed max of 3 lines so I used that as in my sample design.*/
+
+.output {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+/* Stylings of the Digit Punching Box */
+
+.digit-input {
+  transform: rotate(45deg);
+}
+
+.digit-input > p {
+  transform: rotate(-45deg);
+}
+
+/* Stylings of the Operator Punching Box */
+
+.operator-sign {
+  border-radius: 50%;
+}
+
+/* TouchPad Section stylings */
+
+.touch-section {
+  border-radius: 10px 10px;
+}
+
+/* Provided Number + Operator Section */
+
+#provided-number {
+  padding-top: 10px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(242, 244, 248, 0.5);
+}
+
+#operator-section {
+  background-color: rgba(242, 244, 248, 0.5);
+  padding-bottom: 10px;
+}
+
+/* Toolbar Section */
+
+#toolbar {
+  margin-top: -10px;
+  background-color: #f2f4f8;
+  border-radius: 10px;
+}
+
+/* Game Page Template CSS Styling Ends */
+
 /* This class allows a div to have a styling that will be a modal box styling.
 
 Currently used on "How to Play" "Statistics" &
@@ -64,6 +338,51 @@ Currently used on Pop up, Game UI page & Header. */
   width: 100%;
 }
 
+/* Cross Button CSS. Clicking which, modal will be closed.
+
+Currently used on "Settings" "How to Play" & "Statistics Page" */
+
+.cross {
+  width: 40px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.cross:hover {
+  cursor: pointer;
+}
+
+/* Special Button for website throughout the site.
+
+Currently used on "Statistic" Page */
+
+.button-redirect {
+  text-transform: capitalize;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 15px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(196, 68, 252, 1) 0%,
+    rgba(97, 85, 217, 1) 100%
+  );
+  color: white;
+  transition: all 0.25s;
+}
+
+.button-redirect:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(196, 68, 252, 1) 0%,
+    rgba(97, 85, 217, 1) 100%
+  );
+}
+
 /* Media Query For Mobile */
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -87,9 +406,11 @@ Currently used on Pop up, Game UI page & Header. */
 
   /* Media Query: Pop Up Styling */
 
-  .flex-hor {
+  .popUp-ver {
     flex-direction: column;
   }
+
+  /* Pop Up Box CSS Stylings for mobile */
 
   .box {
     width: 80%;
@@ -97,7 +418,7 @@ Currently used on Pop up, Game UI page & Header. */
   }
 
   .icon {
-    width: 75px;
+    max-width: 75px;
   }
 
   /* Media Query: Game Page UI */

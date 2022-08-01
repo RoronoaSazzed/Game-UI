@@ -13,54 +13,22 @@
 
     <link rel="stylesheet" href="style.css" />
     <title>Game Opening Pop Up</title>
-
-    <style>
-      .box {
-        display: grid;
-        place-items: center;
-        width: 35%;
-        max-width: 300px;
-        aspect-ratio: 1 / 1;
-        text-align: center;
-        padding: 25px;
-        border-radius: 25px;
-        box-shadow: 0 5px 25px -10px rgba(0, 0, 0, 0.21);
-        transition: 0.25s;
-      }
-
-      .box:hover {
-        cursor: pointer;
-        box-shadow: 0 5px 25px -10px rgba(196, 68, 252, 0.55);
-      }
-
-      .icon {
-        width: 100px;
-      }
-
-      .iconTitle {
-        font-weight: 300;
-        font-size: 1.5em;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        line-height: 42px;
-        text-align: center;
-      }
-    </style>
   </head>
   <body>
     <div class="modal">
-      <div class="flex-hor">
+      <!-- flex-hor class used for horizontal flex but popUp-ver used so that it can be vertical in mobile -->
+      <div class="flex-hor popUp-ver">
         <div class="box">
           <div>
             <img class="icon" src="icons/Calander.svg" alt="" />
-            <h3 class="iconTitle">daily challenges</h3>
+            <h3 class="page-title">daily challenges</h3>
           </div>
         </div>
 
         <div class="box">
           <div>
             <img class="icon" src="icons/Infinity.svg" alt="" />
-            <h3 class="iconTitle">unlimited play</h3>
+            <h3 class="page-title">unlimited play</h3>
           </div>
         </div>
       </div>

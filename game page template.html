@@ -12,137 +12,6 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Game Page Template</title>
-
-    <style>
-      button {
-        border: none;
-      }
-
-      button:hover {
-        cursor: pointer;
-      }
-
-      .game-box-wrapper {
-        padding: 10px;
-        width: 100%;
-        max-width: 500px;
-        margin: 0 auto;
-      }
-
-      /* Common Code */
-
-      /* This class allows a div to have vertical direction flex box */
-
-      .flex-ver {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      /* Items of vertical direction CSS */
-
-      .items-ver {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      /* Items of horizontal direction CSS */
-
-      .items-hor {
-        margin: 15px 0;
-        display: grid;
-        place-items: center;
-        width: 65px;
-        height: 65px;
-        border-radius: 10px;
-        aspect-ratio: 1 / 1;
-        background-color: white;
-        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.16);
-        font-size: 1.8rem;
-        color: #333333;
-        font-weight: 200;
-      }
-
-      /* Success Color of the result */
-
-      .success {
-        color: white !important;
-        background-color: lightgreen !important;
-      }
-
-      /* Attempt Color of the result */
-
-      .attempt {
-        color: white !important;
-        background-color: coral !important;
-      }
-
-      /* The dynamic Digit that is generated then placed into the game page. This ID holds that container styling. */
-
-      #given-digit {
-        text-align: center;
-        font-size: 30px;
-        color: #ffffff;
-        background-color: #0a84ff;
-        border-radius: 10px;
-      }
-
-      /* Output Section. The options we tap from bottom & wanna see output of.
-      This class allows of that output section as a whole.
-      This class will have "auto height increase" based on how many lines you wanna add. Currently CSS done in that way.
-      
-      N.B. I noticed max of 3 lines so I used that as in my sample design.*/
-
-      .output {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      /* Stylings of the Digit Punching Box */
-
-      .digit-input {
-        transform: rotate(45deg);
-      }
-
-      .digit-input > p {
-        transform: rotate(-45deg);
-      }
-
-      /* Stylings of the Operator Punching Box */
-
-      .operator-sign {
-        border-radius: 50%;
-      }
-
-      /* TouchPad Section stylings */
-
-      .touch-section {
-        border-radius: 10px 10px;
-      }
-
-      /* Provided Number + Operator Section */
-
-      #provided-number {
-        padding-top: 10px;
-        border-radius: 10px 10px 0 0;
-        background-color: rgba(242, 244, 248, 0.5);
-      }
-
-      #operator-section {
-        background-color: rgba(242, 244, 248, 0.5);
-        padding-bottom: 10px;
-      }
-
-      /* Toolbar Section */
-
-      #toolbar {
-        margin-top: -10px;
-        background-color: #f2f4f8;
-        border-radius: 10px;
-      }
-    </style>
   </head>
   <body>
     <div class="game-box-wrapper flex-ver">
@@ -199,16 +68,16 @@
 
       <div class="touch-section items-ver">
         <div class="flex-hor" id="provided-number">
-          <button class="items-hor digit-input">
+          <button class="default-style-disabled items-hor digit-input">
             <p>4</p>
           </button>
-          <button class="items-hor digit-input">
+          <button class="default-style-disabled items-hor digit-input">
             <p>2</p>
           </button>
-          <button class="items-hor digit-input">
+          <button class="default-style-disabled items-hor digit-input">
             <p>5</p>
           </button>
-          <button class="items-hor digit-input">
+          <button class="default-style-disabled items-hor digit-input">
             <p>8</p>
           </button>
         </div>
@@ -216,25 +85,37 @@
         <!-- Operator Section -->
 
         <div class="flex-hor" id="operator-section">
-          <button class="items-hor operator-sign">+</button>
-          <button class="items-hor operator-sign">-</button>
-          <button class="items-hor operator-sign">×</button>
-          <button class="items-hor operator-sign">÷</button>
+          <button class="default-style-disabled items-hor operator-sign">
+            +
+          </button>
+          <button class="default-style-disabled items-hor operator-sign">
+            -
+          </button>
+          <button class="default-style-disabled items-hor operator-sign">
+            ×
+          </button>
+          <button class="default-style-disabled items-hor operator-sign">
+            ÷
+          </button>
         </div>
 
         <!-- Toolbar Section -->
 
         <div class="flex-hor" id="toolbar">
-          <button class="items-hor">
+          <button class="default-style-disabled items-hor">
             <img class="img-responsive" src="icons/Backspace Icon.svg" alt="" />
           </button>
           <button class="items-hor">
-            <img class="img-responsive" src="icons/Trash Icon.svg" alt="" />
+            <img
+              class="default-style-disabled img-responsive"
+              src="icons/Trash Icon.svg"
+              alt=""
+            />
           </button>
-          <button class="items-hor">
+          <button class="default-style-disabled items-hor">
             <img class="img-responsive" src="icons/Complete Icon.svg" alt="" />
           </button>
-          <button class="items-hor">
+          <button class="default-style-disabled items-hor">
             <img class="img-responsive" src="icons/Share Icon.svg" alt="" />
           </button>
         </div>
