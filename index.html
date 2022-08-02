@@ -15,140 +15,149 @@
   </head>
   <body>
     <!-- Header Starts -->
+    <div class="siteWrapper">
+      <div class="header">
+        <div class="flexItem hide-on-mobile" id="home">
+          <a class="nav-options" href="#"
+            ><img class="icon-responsive" src="icons/home.svg" alt=""
+          /></a>
+        </div>
 
-    <div class="header">
-      <div class="flexItem hide-on-mobile" id="home">
-        <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="icons/home.svg" alt=""
-        /></a>
+        <div class="flexItem" id="logo">noodle</div>
+
+        <div class="flexItem" id="nav-menu">
+          <a class="nav-options hide-on-pc" href="#"
+            ><img class="icon-responsive" src="icons/home.svg" alt=""
+          /></a>
+          <a class="nav-options" href="#"
+            ><img class="icon-responsive" src="icons/how-to-play.svg" alt=""
+          /></a>
+          <a class="nav-options" href="#"
+            ><img class="icon-responsive" src="icons/stat.svg" alt=""
+          /></a>
+          <a class="nav-options" href="#"
+            ><img class="icon-responsive" src="icons/settings.svg" alt=""
+          /></a>
+        </div>
       </div>
 
-      <div class="flexItem" id="logo">noodle</div>
+      <!-- Header Ends -->
 
-      <div class="flexItem" id="nav-menu">
-        <a class="nav-options hide-on-pc" href="#"
-          ><img class="icon-responsive" src="icons/home.svg" alt=""
-        /></a>
-        <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="icons/how-to-play.svg" alt=""
-        /></a>
-        <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="icons/stat.svg" alt=""
-        /></a>
-        <a class="nav-options" href="#"
-          ><img class="icon-responsive" src="icons/settings.svg" alt=""
-        /></a>
+      <!-- Game Page Templates Starts -->
+
+      <div class="game-box-wrapper flex-ver">
+        <!-- Screen Section -->
+
+        <div class="screen-section flex-ver items-ver">
+          <div class="items-ver" id="given-digit">152</div>
+          <h4 class="notice">points available: 10</h4>
+        </div>
+
+        <!-- Output Section -->
+
+        <div class="output items-ver">
+          <div class="flex-hor items-ver">
+            <div class="items-hor digit-input">
+              <p>4</p>
+            </div>
+            <div class="items-hor operator-sign">-</div>
+            <div class="items-hor digit-input">
+              <p>5</p>
+            </div>
+            <div class="items-hor attempt">2</div>
+          </div>
+
+          <div class="flex-hor items-ver">
+            <div class="items-hor digit-input">
+              <p>4</p>
+            </div>
+            <div class="items-hor operator-sign">-</div>
+            <div class="items-hor digit-input">
+              <p>5</p>
+            </div>
+            <div class="items-hor attempt">2</div>
+          </div>
+
+          <div class="flex-hor items-ver">
+            <div class="items-hor digit-input">
+              <p>4</p>
+            </div>
+            <div class="items-hor operator-sign">-</div>
+            <div class="items-hor digit-input">
+              <p>5</p>
+            </div>
+            <div class="items-hor success">2</div>
+          </div>
+        </div>
+
+        <!-- Touch Section -->
+
+        <!-- Digit Section -->
+
+        <div class="touch-section items-ver">
+          <div class="flex-hor" id="provided-number">
+            <button class="default-style-disabled items-hor digit-input">
+              <p>4</p>
+            </button>
+            <button class="default-style-disabled items-hor digit-input">
+              <p>2</p>
+            </button>
+            <button class="default-style-disabled items-hor digit-input">
+              <p>5</p>
+            </button>
+            <button class="default-style-disabled items-hor digit-input">
+              <p>8</p>
+            </button>
+          </div>
+
+          <!-- Operator Section -->
+
+          <div class="flex-hor" id="operator-section">
+            <button class="default-style-disabled items-hor operator-sign">
+              +
+            </button>
+            <button class="default-style-disabled items-hor operator-sign">
+              -
+            </button>
+            <button class="default-style-disabled items-hor operator-sign">
+              ×
+            </button>
+            <button class="default-style-disabled items-hor operator-sign">
+              ÷
+            </button>
+          </div>
+
+          <!-- Toolbar Section -->
+
+          <div class="flex-hor" id="toolbar">
+            <button class="default-style-disabled items-hor">
+              <img
+                class="img-responsive"
+                src="icons/Backspace Icon.svg"
+                alt=""
+              />
+            </button>
+            <button class="default-style-disabled items-hor">
+              <img class="img-responsive" src="icons/Trash Icon.svg" alt="" />
+            </button>
+            <button class="default-style-disabled items-hor">
+              <img
+                class="img-responsive"
+                src="icons/Complete Icon.svg"
+                alt=""
+              />
+            </button>
+            <button class="default-style-disabled items-hor">
+              <img class="img-responsive" src="icons/Share Icon.svg" alt="" />
+            </button>
+            <button class="default-style-disabled items-hor">
+              <img class="img-responsive" src="icons/Replay Icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- Game Page Templates Ends -->
     </div>
-
-    <!-- Header Ends -->
-
-    <!-- Game Page Templates Starts -->
-
-    <div class="game-box-wrapper flex-ver">
-      <!-- Screen Section -->
-
-      <div class="screen-section flex-ver items-ver">
-        <div class="items-ver" id="given-digit">152</div>
-        <h4 class="notice">points available: 10</h4>
-      </div>
-
-      <!-- Output Section -->
-
-      <div class="output items-ver">
-        <div class="flex-hor items-ver">
-          <div class="items-hor digit-input">
-            <p>4</p>
-          </div>
-          <div class="items-hor operator-sign">-</div>
-          <div class="items-hor digit-input">
-            <p>5</p>
-          </div>
-          <div class="items-hor attempt">2</div>
-        </div>
-
-        <div class="flex-hor items-ver">
-          <div class="items-hor digit-input">
-            <p>4</p>
-          </div>
-          <div class="items-hor operator-sign">-</div>
-          <div class="items-hor digit-input">
-            <p>5</p>
-          </div>
-          <div class="items-hor attempt">2</div>
-        </div>
-
-        <div class="flex-hor items-ver">
-          <div class="items-hor digit-input">
-            <p>4</p>
-          </div>
-          <div class="items-hor operator-sign">-</div>
-          <div class="items-hor digit-input">
-            <p>5</p>
-          </div>
-          <div class="items-hor success">2</div>
-        </div>
-      </div>
-
-      <!-- Touch Section -->
-
-      <!-- Digit Section -->
-
-      <div class="touch-section items-ver">
-        <div class="flex-hor" id="provided-number">
-          <button class="default-style-disabled items-hor digit-input">
-            <p>4</p>
-          </button>
-          <button class="default-style-disabled items-hor digit-input">
-            <p>2</p>
-          </button>
-          <button class="default-style-disabled items-hor digit-input">
-            <p>5</p>
-          </button>
-          <button class="default-style-disabled items-hor digit-input">
-            <p>8</p>
-          </button>
-        </div>
-
-        <!-- Operator Section -->
-
-        <div class="flex-hor" id="operator-section">
-          <button class="default-style-disabled items-hor operator-sign">
-            +
-          </button>
-          <button class="default-style-disabled items-hor operator-sign">
-            -
-          </button>
-          <button class="default-style-disabled items-hor operator-sign">
-            ×
-          </button>
-          <button class="default-style-disabled items-hor operator-sign">
-            ÷
-          </button>
-        </div>
-
-        <!-- Toolbar Section -->
-
-        <div class="flex-hor" id="toolbar">
-          <button class="default-style-disabled items-hor">
-            <img class="img-responsive" src="icons/Backspace Icon.svg" alt="" />
-          </button>
-          <button class="default-style-disabled items-hor">
-            <img class="img-responsive" src="icons/Trash Icon.svg" alt="" />
-          </button>
-          <button class="default-style-disabled items-hor">
-            <img class="img-responsive" src="icons/Complete Icon.svg" alt="" />
-          </button>
-          <button class="default-style-disabled items-hor">
-            <img class="img-responsive" src="icons/Share Icon.svg" alt="" />
-          </button>
-          <button class="default-style-disabled items-hor">
-            <img class="img-responsive" src="icons/Replay Icon.svg" alt="" />
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Game Page Templates Ends -->
   </body>
 </html>
